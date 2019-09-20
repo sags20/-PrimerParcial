@@ -127,7 +127,10 @@ p{
     min-height: 300px;
     max-width: 250px;
     margin: 2rem auto;
-}
+}  color: #D7DEE6;
+padding: 0.1em;
+text-decoration: none;
+font-size: 7em;
 
 .post ul li article {
     overflow: hidden;
@@ -198,9 +201,14 @@ p{
     margin-top: 1.5em;
 }
 
+/*se agrego font-weight*/
 .contact-form {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+   
+   
 }
 
 .contact-form input, .contact-form textarea{
@@ -208,16 +216,19 @@ p{
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
-    width: 100%;
+    width: 80%;
+     
+   
 }
 
 /* Decorando placeholder */
 
 ::-webkit-input-placeholder { 
     color: #D7DEE6; 
+    
 } 
  
-:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
+:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6 ; } 
  
 ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
  
@@ -237,12 +248,18 @@ p{
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
+    height: 200%;
+    margin-bottom: 0
+
+    
 }
 
 /*se modifico el margen y la altura de los links*/
 footer .social-links {
-    margin: 3em;
-   height: 10px;
+    margin: 5em;
+   height: 5px;
+   font-size:-4em
+
 }
 
 .menu {
