@@ -2,7 +2,9 @@
 
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,295 +13,308 @@
 
 /* El estilo base para moviles */
 /*se agrego @media para adecuar el tamaño para moviles*/
-@media only screen and (min-width: 414px){
-body {
-    background-color: #112935;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
+@media only screen and (min-width: 414px) {
+    body {
+        background-color: #112935;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-weight: 400;
+    }
 
 
-.header {
-    display: flex;
-    justify-content: space-between
-}
+    .header {
+        display: flex;
+        justify-content: space-between
+    }
 
-.src-only {
-    display: none;
-}
+    .src-only {
+        display: none;
+    }
 
-.hide-mobile {
-    display: none;
-}
+    .hide-mobile {
+        display: none;
+    }
 
-p{
-    font-size: 0.75em;
-    padding: 1rem;
-    line-height: 25px;
-    
-}
+    p {
+        font-size: 0.75em;
+        padding: 1rem;
+        line-height: 25px;
 
-.logo {
-    width: 90px;
-    margin: 1em;
-}
+    }
 
-.options {
-    color: inherit;
-    text-decoration: none;
-    position: relative;
-    top: 30%;
-    right: 95%;
-    font-size: 1.5rem;
+    .logo {
+        width: 90px;
+        margin: 1em;
+    }
 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    .options {
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+        top: 30%;
+        right: 95%;
+        font-size: 1.5rem;
 
-}
-.options i:last-child {
-    font-size: 1.6rem;
-}
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
 
-/* Big area */
-.big-hero img {
-    width: 150px;
-}
+    }
 
-.big-hero h2 {
-    font-size: 1.875em;
-    font-weight: 700;
-    letter-spacing: 0.002em;
-    margin-top: 1em ;
-}
+    .options i:last-child {
+        font-size: 1.6rem;
+    }
 
-/*se cambio font-size*/
-.big-hero p {
-    font-size: 0.9em;;
-    color: #D7DEE6;
+    /* Big area */
+    .big-hero img {
+        width: 150px;
+    }
 
-}
+    .big-hero h2 {
+        font-size: 1.875em;
+        font-weight: 700;
+        letter-spacing: 0.002em;
+        margin-top: 1em;
+    }
 
-/* Social links*/
-/*se modifico padding,margin-top y se agrego margin bottom*/
-.social-links{
-    list-style: none;
-    padding: 0.5em;
-    margin-top: -4em;
-    margin-bottom: 3em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center
+    /*se cambio font-size*/
+    .big-hero p {
+        font-size: 0.9em;
+        ;
+        color: #D7DEE6;
 
-}
-/*se modifico el font-size y se agrego padding a los links*/
-.social-links li a{
-    color: #D7DEE6;
-    padding: 0.1em;
-    text-decoration: none;
-    font-size: 7em;
-}
+    }
 
+    /* Social links*/
+    /*se modifico padding,margin-top y se agrego margin bottom*/
+    .social-links {
+        list-style: none;
+        padding: 0.5em;
+        margin-top: -4em;
+        margin-bottom: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+    }
 
-.green-area {
-    background-color: #0AC693; 
-}
+    /*se modifico el font-size y se agrego padding a los links*/
+    .social-links li a {
+        color: #D7DEE6;
+        padding: 0.1em;
+        text-decoration: none;
+        font-size: 7em;
+    }
 
 
-.post {
-    padding: 1em;
-    margin-bottom: -2px;
-}
-.post h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.125em;
-    margin: 1em;
-}
+    .green-area {
+        background-color: #0AC693;
+    }
 
-.post ul {
-    list-style: none;
-}
 
-.post ul li {
-    min-height: 300px;
-    max-width: 250px;
-    margin: 2rem auto;
-}  color: #D7DEE6;
-padding: 0.1em;
-text-decoration: none;
-font-size: 7em;
+    .post {
+        padding: 1em;
+        margin-bottom: -2px;
+    }
 
-.post ul li article {
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #ffffff;
-    text-align: left;
-    padding-bottom: 2em;
-}
+    .post h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 1em;
+    }
 
-.post article img{
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-}
+    .post ul {
+        list-style: none;
+    }
 
-.post article h3 {
-    color: #0D5061;
-    margin-top: 2em;
-    padding: 0em 1rem;
-    font-size: 0.9em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+    .post ul li {
+        min-height: 300px;
+        max-width: 250px;
+        margin: 2rem auto;
+    }
 
-.post article p {
-    color:#112935;
-    font-size: 0.75em;
-    padding: 1rem;
-    line-height: 25px;
-}
+    .post ul li article {
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #ffffff;
+        text-align: left;
+        padding-bottom: 2em;
+    }
 
-/* About */
+    .post article img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
 
-.about{
-    margin-top: 2em;
-}
+    .post article h3 {
+        color: #0D5061;
+        margin-top: 2em;
+        padding: 0em 1rem;
+        font-size: 0.9em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
-.about h2 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.125em;
-    margin: 2em;
-}
+    .post article p {
+        color: #112935;
+        font-size: 0.75em;
+        padding: 1rem;
+        line-height: 25px;
+    }
 
-/*se modifico el tamaño de la imagen */
-.bio-info img{
-   width: 180px;
-}
+    /* About */
 
-/*se modifico  el padding */
-.bio-info p{
-    font-size: 16px;
-    padding: 4em;
-    text-align: left;
-    line-height: 25px;
-    letter-spacing: 2px;
-}
+    .about {
+        margin-top: 2em;
+    }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 0px 1em;
-}
+    .about h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 2em;
+    }
 
-.contact * + * {
-    margin-top: 1.5em;
-}
+    /*se modifico el tamaño de la imagen */
+    .bio-info img {
+        width: 180px;
+    }
 
-/*se agrego font-weight*/
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    align-items: center;
-   
-   
-}
+    /*se modifico  el padding */
+    .bio-info p {
+        font-size: 16px;
+        padding: 3em;
+        text-align: left;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
 
-.contact-form input, .contact-form textarea{
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0px 2em;
-    font-size: 1em;
-    width: 80%;
-     
-   
-}
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 1em;
 
-/* Decorando placeholder */
+    }
 
-::-webkit-input-placeholder { 
-    color: #D7DEE6; 
-    
-} 
- 
-:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6 ; } 
- 
-::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
- 
-:-ms-input-placeholder { color: #D7DEE6; }
+    .contact *+* {
+        margin-top: 1.5em;
 
-.contact-form input[type=submit] {
-    background-color: #F74442;
-    font-weight: 400;
-    color: white;
-    font-size: 1rem;
-}
+    }
 
-.black-decoration{
-    background-image: url("../images/decoracion_oscura_small.svg");
-}
+    /*se agrego font-weight*/
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        align-items: center
+    }
 
-footer{
-    background-color: #0D5061;
-    color:#D7DEE6;
-    height: 200%;
-    margin-bottom: 0
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0px 2em;
+        font-size: 1em;
+        width: 80%;
 
-    
-}
 
-/*se modifico el margen y la altura de los links*/
-footer .social-links {
-    margin: 5em;
-   height: 5px;
-   font-size:-4em
+    }
 
-}
+    /* Decorando placeholder */
 
-.menu {
-    background-color: #112935;
-    position: absolute;
-    z-index: 20;
-    top: 60px;
-    right: 0;
-    width: 100vw;
-    height: calc(100vh - 60px);
-}
+    ::-webkit-input-placeholder {
+        color: #D7DEE6;
 
-.menu {
-    list-style: none;
-    text-align: left;
-    padding: 1em;
-}
-.menu li {
-    display: block;
-    padding: 0.5em;
-    margin-top: 5px;
-}
+    }
 
-.menu li a {
-    color: white;
-    text-decoration: none;
-    
-}
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #D7DEE6;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #D7DEE6;
+    }
+
+    :-ms-input-placeholder {
+        color: #D7DEE6;
+    }
+
+    .contact-form input[type=submit] {
+        background-color: #F74442;
+        font-weight: 400;
+        color: white;
+        font-size: 1rem;
+
+    }
+
+    .black-decoration {
+        background-image: url("../images/decoracion_oscura_small.svg");
+    }
+
+    footer {
+        background-color: #0D5061;
+        color: #D7DEE6;
+
+
+
+    }
+
+    /*se agrego margin,padding y font-size*/
+    footer .social-links {
+        
+        height: 1px;
+        font-size: 15px;
+        padding: 1em;
+        margin:1em;
+        margin-top: 3em;
+        align-items: center
+    }
+
+    .menu {
+        background-color: #112935;
+        position: absolute;
+        z-index: 20;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        height: calc(100vh - 60px);
+    }
+
+    .menu {
+        list-style: none;
+        text-align: left;
+        padding: 1em;
+    }
+
+    .menu li {
+        display: block;
+        padding: 0.5em;
+        margin-top: 5px;
+    }
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+
+    }
 }
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+
     .post ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -322,11 +337,11 @@ footer .social-links {
     }
 
     .menu {
-        background-color: #112935; 
+        background-color: #112935;
         position: static;
         z-index: 20;
         width: auto;
-        height:auto;
+        height: auto;
         display: flex;
         margin-top: 1em;
     }
@@ -335,11 +350,11 @@ footer .social-links {
 
 
     /*TODO: FALTA CSS */
-} 
+}
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+    /*TODO: FALTA CSS */
 
 
 
