@@ -887,14 +887,14 @@
         background-color: #0D5061;
         color: #D7DEE6;
     }
-
+/*se modifico el footer agregando padding y margin-top*/
     footer .social-links {
         margin: 0;
         margin-top: 2em;
         padding: 2em
     }
 
-
+/*se agrego margin*/
     .menu {
         list-style: none;
         text-align: left;
@@ -931,6 +931,7 @@
 
 @media only screen and (min-width: 1440px) {
 
+    /*se le dio estilo al contenedor*/
     .container {
         width: 80%;
         margin: 0 auto;
@@ -953,6 +954,7 @@
         line-height: 25px;
     }
 
+    /*se modifico el logo*/
     .logo {
         width: 250px;
         margin: 1em;
@@ -962,11 +964,12 @@
 
 
     /* Big area */
+    /*se modifico la imagen agregando padding*/
     .big-hero img {
         margin-top: 6em;
         width: 300px;
     }
-
+/*se modifico el texto y el titulo*/
     .big-hero h2 {
         font-size: 2em;
         font-weight: 700;
@@ -984,6 +987,7 @@
     auto
 
     /* Social links*/
+    /*se modifico social-links*/
     .social-links {
         list-style: none;
         padding: 0;
@@ -1028,6 +1032,7 @@
     .post ul {
         list-style: none;
     }
+    /*se modificaron los articulos*/
 
     .post ul li {
         min-height: 250px;
@@ -1068,6 +1073,7 @@
     }
 
     /* About */
+    /*se modifico el about con un grid para las dos columnas */
 
     .about {
         margin-top: 2em;
@@ -1166,6 +1172,7 @@
         background-image: url("../images/decoracion_oscura_small.svg");
     }
 
+    /*modificacion del footer social-links*/
     footer {
         background-color: #0D5061;
         color: #D7DEE6;
@@ -1211,5 +1218,4 @@
 
 
 
-}
 }
