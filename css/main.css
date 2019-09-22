@@ -202,11 +202,11 @@
 
     .contact *+* {
         margin-top: 1.5em;
-        
+
     }
-    
-   
-   
+
+
+
     /*se agrego font-weight*/
     .contact-form {
         display: flex;
@@ -269,11 +269,11 @@
 
     /*se agrego margin,padding y font-size*/
     footer .social-links {
-        
+
         height: 1px;
         font-size: 15px;
         padding: 1em;
-        margin:1em;
+        margin: 1em;
         margin-top: 3em;
         align-items: center
     }
@@ -357,7 +357,7 @@
 /*css para laptop*/
 @media only screen and (min-width: 1024px) {
 
-  
+
     body {
         background-color: #112935;
         color: white;
@@ -365,94 +365,78 @@
         text-align: center;
         font-weight: 400;
     }
-    
-   
-    
-    p{
+
+
+    p {
         font-size: 0.75em;
         padding: 1rem;
         line-height: 25px;
     }
-    
+
     .logo {
-        width: 90px;
+        width: 150px;
         margin: 1em;
     }
-    
-    .options {
-        color: inherit;
-        text-decoration: none;
-        position: relative;
-        top: 30%;
-        right: 95%;
-        font-size: 1.5rem;
-    
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    
-    }
-    .options i:last-child {
-        font-size: 1.6rem;
-    }
-    
+
+
     /* Big area */
     .big-hero img {
         width: 150px;
     }
-    
+
     .big-hero h2 {
         font-size: 1.875em;
         font-weight: 700;
         letter-spacing: 0.002em;
-        margin-top: 1em ;
+        margin-top: 1em;
     }
-    
+
     .big-hero p {
-        font-size: 0.7em;;
+        font-size: 0.7em;
+        ;
         color: #D7DEE6;
-    
+
     }
-    
+
     /* Social links*/
-    .social-links{
+    .social-links {
         list-style: none;
         padding: 0;
         margin-top: 3em;
         display: flex;
         flex-direction: row;
         justify-content: center
-    
     }
-    
-    .social-links li a{
+
+    .social-links li a {
         color: #D7DEE6;
         text-decoration: none;
         font-size: 2.5em;
     }
-    
-    
+
+
     .post {
         padding: 1em;
         margin-bottom: -2px;
     }
+
     .post h2 {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.125em;
         margin: 1em;
     }
-    
+
     .post ul {
         list-style: none;
     }
-    
+
     .post ul li {
         min-height: 300px;
         max-width: 350px;
         margin: 2rem auto;
     }
-    
+
     .post ul li article {
         overflow: hidden;
         border-radius: 10px;
@@ -460,13 +444,13 @@
         text-align: left;
         padding-bottom: 2em;
     }
-    
-    .post article img{
+
+    .post article img {
         height: 150px;
         width: 100%;
         object-fit: cover;
     }
-    
+
     .post article h3 {
         color: #0D5061;
         margin-top: 2em;
@@ -476,113 +460,132 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    
+
     .post article p {
-        color:#112935;
+        color: #112935;
         font-size: 0.75em;
         padding: 1rem;
         line-height: 25px;
     }
-    
+
     /* About */
-    
-    .about{
+
+    .about {
         margin-top: 2em;
     }
-    
+
     .about h2 {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.125em;
         margin: 2em;
     }
-    
-    .bio-info img{
-       width: 200px;
+
+    .bio-info img {
+        width: 200px;
     }
-    
-    .bio-info p{
+
+    .bio-info p {
         font-size: 16px;
         padding: 2em;
         text-align: left;
         line-height: 25px;
         letter-spacing: 2px;
     }
-    
+
     .contact {
         display: flex;
         flex-direction: column;
         text-align: left;
         padding: 0px 1em;
     }
-    
-    .contact * + * {
+
+    .contact *+* {
         margin-top: 1.5em;
     }
-    
+
     .contact-form {
         display: flex;
         flex-direction: column;
     }
-    
-    .contact-form input, .contact-form textarea{
+
+    .contact-form input,
+    .contact-form textarea {
         padding: 1rem 2rem;
         border: none;
         border-radius: 0px 2em;
         font-size: 1em;
         width: 100%;
     }
-    
+
     /* Decorando placeholder */
-    
-    ::-webkit-input-placeholder { 
-        color: #D7DEE6; 
-    } 
-     
-    :-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
-     
-    ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
-     
-    :-ms-input-placeholder { color: #D7DEE6; }
-    
+
+    ::-webkit-input-placeholder {
+        color: #D7DEE6;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #D7DEE6;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #D7DEE6;
+    }
+
+    :-ms-input-placeholder {
+        color: #D7DEE6;
+    }
+
     .contact-form input[type=submit] {
         background-color: #F74442;
         font-weight: 400;
         color: white;
         font-size: 1rem;
     }
-    
-    .black-decoration{
+
+    .black-decoration {
         background-image: url("../images/decoracion_oscura_small.svg");
     }
-    
-    footer{
+
+    footer {
         background-color: #0D5061;
-        color:#D7DEE6;
+        color: #D7DEE6;
     }
-    
+
     footer .social-links {
         margin: 0;
     }
-    
-    
+
+
     .menu {
         list-style: none;
         text-align: left;
-        padding: 1em;
+        padding: 2em;
+        padding-right: 3em;
+        margin:0;
+    }
+
+    ul.menu li a:hover{
+        color:red;
     }
     .menu li {
         display: block;
         padding: 0.5em;
-        margin-top: 5px;
+        margin: 0;
     }
-    
+
     .menu li a {
         color: white;
         text-decoration: none;
-        
     }
-    
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+    }
+
 
 
 }
