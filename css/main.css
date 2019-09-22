@@ -197,12 +197,299 @@
         flex-direction: column;
         text-align: left;
         padding: 0px 1em;
+        align-items: center;
 
     }
 
     .contact *+* {
         margin-top: 1.5em;
 
+    }
+
+
+
+    /*se agrego font-weight*/
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        align-items: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0px 2em;
+        font-size: 1em;
+        width: 100%;
+        
+
+
+    }
+
+    /* Decorando placeholder */
+
+    ::-webkit-input-placeholder {
+        color: #D7DEE6;
+
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #D7DEE6;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #D7DEE6;
+    }
+
+    :-ms-input-placeholder {
+        color: #D7DEE6;
+    }
+
+    .contact-form input[type=submit] {
+        background-color: #F74442;
+        font-weight: 400;
+        color: white;
+        font-size: 1rem;
+
+    }
+
+    .black-decoration {
+        background-image: url("../images/decoracion_oscura_small.svg");
+    }
+
+    footer {
+        background-color: #0D5061;
+        color: #D7DEE6;
+
+    }
+
+    /*se agrego margin,padding y font-size*/
+    footer .social-links {
+
+        height: 1px;
+        font-size: 15px;
+        padding: 1em;
+        margin: 1em;
+        margin-top: 3em;
+        align-items: center
+    }
+
+    .menu {
+        background-color: #112935;
+        position: absolute;
+        z-index: 20;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        height: calc(100vh - 60px);
+    }
+
+    .menu {
+        list-style: none;
+        text-align: left;
+        padding: 1em;
+    }
+
+    .menu li {
+        display: block;
+        padding: 0.5em;
+        margin-top: 5px;
+    }
+
+    .menu li a {
+        color: white;
+        text-decoration: none;
+
+    }
+}
+
+/* Pesonalizando estilo para tablets*/
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: #112935;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-weight: 400;
+    }
+
+
+    .header {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .src-only {
+        display: none;
+    }
+
+   
+
+    p {
+        font-size: 0.75em;
+        padding: 1rem;
+        line-height: 25px;
+
+    }
+
+
+    .options {
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+        top: 30%;
+        right: 95%;
+        font-size: 1.5rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+    }
+
+   
+
+    /* Big area */
+    .big-hero img {
+        width: 150px;
+    }
+
+    .big-hero h2 {
+        font-size: 1.875em;
+        font-weight: 700;
+        letter-spacing: 0.002em;
+        margin-top: 1em;
+    }
+
+    /*se cambio font-size*/
+    .big-hero p {
+        font-size: 0.9em;
+        ;
+        color: #D7DEE6;
+
+    }
+
+    /* Social links*/
+    /*se modifico padding,margin-top y se agrego margin bottom*/
+    .social-links {
+        list-style: none;
+        padding: 0.5em;
+        margin-top: -4em;
+        margin-bottom: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+    }
+
+    /*se modifico el font-size y se agrego padding a los links*/
+    .social-links li a {
+        color: #D7DEE6;
+        padding: 0.1em;
+        text-decoration: none;
+        font-size: 7em;
+    }
+    .fas {
+        color: #0AC693;
+        font-size: 3em;
+        padding: 0;
+        margin-top: -1em;
+        margin-bottom: 1em;
+    }
+
+
+    .green-area {
+        background-color: #0AC693;
+    }
+
+
+    .post {
+        padding: 1em;
+        margin-bottom: -2px;
+    }
+
+    .post h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 1em;
+    }
+
+ 
+    
+
+    .post ul li article {
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #ffffff;
+        text-align: left;
+        padding-bottom: 2em;
+    }
+
+    .post article img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .post article h3 {
+        color: #0D5061;
+        margin-top: 2em;
+        padding: 0em 1rem;
+        font-size: 0.9em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .post article p {
+        color: #112935;
+        font-size: 0.75em;
+        padding: 1rem;
+        line-height: 25px;
+    }
+
+    /* About */
+
+    .about {
+        margin-top: 2em;
+    }
+
+    .about h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.125em;
+        margin: 2em;
+    }
+
+    /*se modifico el tamaño de la imagen */
+    .bio-info img {
+        width: 180px;
+    }
+
+    /*se modifico  el padding */
+    .bio-info p {
+        font-size: 16px;
+        padding: 3em;
+        text-align: left;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0px 1em;
+
+    }
+
+    .contact *+* {
+        margin-top: 1.5em;
     }
 
 
@@ -222,8 +509,6 @@
         border-radius: 0px 2em;
         font-size: 1em;
         width: 80%;
-
-
     }
 
     /* Decorando placeholder */
@@ -278,20 +563,15 @@
         align-items: center
     }
 
-    .menu {
-        background-color: #112935;
-        position: absolute;
-        z-index: 20;
-        top: 60px;
-        right: 0;
-        width: 100vw;
-        height: calc(100vh - 60px);
+    ul.menu li a:hover {
+        color: red;
     }
 
     .menu {
         list-style: none;
         text-align: left;
-        padding: 1em;
+        padding-right: 1em;
+        margin: 0;
     }
 
     .menu li {
@@ -305,11 +585,6 @@
         text-decoration: none;
 
     }
-}
-
-/* Pesonalizando estilo para tablets*/
-@media only screen and (min-width: 768px) {
-
     .post ul {
         list-style: none;
         display: flex;
@@ -318,8 +593,8 @@
     }
 
     .post ul li {
-        min-height: 350px;
-        max-height: 3500px;
+        min-height: 10px;
+        max-height: 1500px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
     }
@@ -328,6 +603,7 @@
     .logo {
         width: 150px;
         margin: 1.5em;
+        padding: 1em
     }
 
     .show-desktop {
@@ -337,7 +613,9 @@
     .hide-desktop {
         display: none;
     }
-
+    ul.menu li a:hover {
+        color: red;
+    }
     .menu {
         background-color: #112935;
         position: static;
@@ -351,7 +629,7 @@
 
 
 
-    /*TODO: FALTA CSS */
+  
 }
 
 /*css para laptop*/
@@ -490,7 +768,7 @@
     .about {
         margin-top: 2em;
         display: grid;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
 
     }
@@ -501,6 +779,8 @@
         font-size: 1.50em;
         margin: 2em;
         margin-top: 0;
+        grid-column-start: 1;
+        grid-column-end:2; 
     }
 
 
@@ -537,8 +817,8 @@
     .contact-form {
         display: flex;
         flex-direction: column;
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: -1;
+        grid-column-end: -2;
     }
 
     .contact-form input,
@@ -548,8 +828,6 @@
         border-radius: 0px 2em;
         font-size: 1em;
         width: 100%;
-        grid-column-start: 2;
-        grid-column-end: 3;
     }
 
     /* Decorando placeholder */
