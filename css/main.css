@@ -14,6 +14,8 @@
 /* El estilo base para moviles */
 /*se agrego @media para adecuar el tamaño para moviles*/
 @media only screen and (min-width: 414px) {
+
+    /*se define el estilo del body , fuente, background,etc*/
     body {
         background-color: #112935;
         color: white;
@@ -22,7 +24,7 @@
         font-weight: 400;
     }
 
-
+    /*se define el display a utilizar ..*/
     .header {
         display: flex;
         justify-content: space-between
@@ -36,6 +38,7 @@
         display: none;
     }
 
+
     p {
         font-size: 0.75em;
         padding: 1rem;
@@ -43,6 +46,7 @@
 
     }
 
+    /*se definen las medidas del logo...*/
     .logo {
         width: 90px;
         margin: 1em;
@@ -71,6 +75,7 @@
         width: 150px;
     }
 
+    /* modifica el titulo (el nombre)*/
     .big-hero h2 {
         font-size: 1.875em;
         font-weight: 700;
@@ -78,16 +83,16 @@
         margin-top: 1em;
     }
 
+    /*modifica texto abajo del nombre*/
     /*se cambio font-size*/
     .big-hero p {
         font-size: 0.9em;
-        ;
         color: #D7DEE6;
 
     }
 
     /* Social links*/
-    /*se modifico padding,margin-top y se agrego margin bottom*/
+    /*se modifico padding,margin-top y se agrego margin bottom,*/
     .social-links {
         list-style: none;
         padding: 0.5em;
@@ -117,6 +122,7 @@
         margin-bottom: -2px;
     }
 
+    /*modifica el texto arriba de los articulos (publicaciones)*/
     .post h2 {
         text-transform: uppercase;
         font-weight: 700;
@@ -124,6 +130,7 @@
         margin: 1em;
     }
 
+    /*esta parte de css modifica los articulos (publicaciones)*/
     .post ul {
         list-style: none;
     }
@@ -166,7 +173,7 @@
     }
 
     /* About */
-
+    /*se le asigna margen y estilo al tecto (acerca de)*/
     .about {
         margin-top: 2em;
     }
@@ -183,7 +190,7 @@
         width: 180px;
     }
 
-    /*se modifico  el padding */
+    /*se modifico  el padding, (texto abajo del logo) */
     .bio-info p {
         font-size: 16px;
         padding: 3em;
@@ -192,6 +199,7 @@
         letter-spacing: 2px;
     }
 
+    /*se le asigna estilo al formulario*/
     .contact {
         display: flex;
         flex-direction: column;
@@ -205,8 +213,6 @@
         margin-top: 1.5em;
 
     }
-
-
 
     /*se agrego font-weight*/
     .contact-form {
@@ -223,7 +229,7 @@
         border-radius: 0px 2em;
         font-size: 1em;
         width: 100%;
-        
+
 
 
     }
@@ -249,6 +255,7 @@
         color: #D7DEE6;
     }
 
+    /*modifica y da estilo al boton contactar*/
     .contact-form input[type=submit] {
         background-color: #F74442;
         font-weight: 400;
@@ -261,6 +268,7 @@
         background-image: url("../images/decoracion_oscura_small.svg");
     }
 
+    /*el footer modifica la ultima parte en la cual se encuentra los social-links y Copyright*/
     footer {
         background-color: #0D5061;
         color: #D7DEE6;
@@ -277,6 +285,8 @@
         margin-top: 3em;
         align-items: center
     }
+
+    /*el css a continuacion modifica el menu */
 
     .menu {
         background-color: #112935;
@@ -307,6 +317,8 @@
     }
 }
 
+/*EL CSS SE REPITE PERO CON CAMBIOS Y ADAPTACIONES A CADA DISPOSITIVO*/
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
 
@@ -328,7 +340,7 @@
         display: none;
     }
 
-   
+
 
     p {
         font-size: 0.75em;
@@ -352,7 +364,7 @@
 
     }
 
-   
+
 
     /* Big area */
     .big-hero img {
@@ -369,7 +381,6 @@
     /*se cambio font-size*/
     .big-hero p {
         font-size: 0.9em;
-        ;
         color: #D7DEE6;
 
     }
@@ -393,6 +404,8 @@
         text-decoration: none;
         font-size: 7em;
     }
+
+    /*se agrego la flecha y se le dio estilo*/
     .fas {
         color: #0AC693;
         font-size: 3em;
@@ -419,8 +432,8 @@
         margin: 1em;
     }
 
- 
-    
+
+
 
     .post ul li article {
         overflow: hidden;
@@ -454,9 +467,13 @@
     }
 
     /* About */
-
+    /*se modifico el about con un display grid para poder tener las dos columnas*/
     .about {
         margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
     }
 
     .about h2 {
@@ -464,6 +481,8 @@
         font-weight: 700;
         font-size: 1.125em;
         margin: 2em;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
     /*se modifico el tamaño de la imagen */
@@ -500,6 +519,8 @@
         flex-direction: column;
         font-weight: bold;
         align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
     .contact-form input,
@@ -548,13 +569,10 @@
         background-color: #0D5061;
         color: #D7DEE6;
 
-
-
     }
 
     /*se agrego margin,padding y font-size*/
     footer .social-links {
-
         height: 1px;
         font-size: 15px;
         padding: 1em;
@@ -563,6 +581,7 @@
         align-items: center
     }
 
+    /*se agrego un hover al menu */
     ul.menu li a:hover {
         color: red;
     }
@@ -585,6 +604,7 @@
         text-decoration: none;
 
     }
+
     .post ul {
         list-style: none;
         display: flex;
@@ -599,7 +619,7 @@
         flex: 1 0 300px;
     }
 
-
+/*se modifico el tamaño del logo*/
     .logo {
         width: 150px;
         margin: 1.5em;
@@ -613,9 +633,8 @@
     .hide-desktop {
         display: none;
     }
-    ul.menu li a:hover {
-        color: red;
-    }
+
+
     .menu {
         background-color: #112935;
         position: static;
@@ -629,7 +648,7 @@
 
 
 
-  
+
 }
 
 /*css para laptop*/
@@ -661,6 +680,7 @@
 
 
     /* Big area */
+    /*se modifico el margen */
     .big-hero img {
         margin-top: 6em;
         width: 150px;
@@ -675,12 +695,12 @@
 
     .big-hero p {
         font-size: 0.7em;
-        ;
         color: #D7DEE6;
 
     }
 
     /* Social links*/
+    /*se modifico el css deo social-link*/
     .social-links {
         list-style: none;
         padding: 0;
@@ -697,7 +717,7 @@
         font-size: 7em;
     }
 
-    /*editando flecha */
+    /*editando flecha, se edito el margen */
     .fas {
         color: #0AC693;
         font-size: 3em;
@@ -710,6 +730,7 @@
         background-color: #0AC693;
     }
 
+    /*se modifico el padding y el margin*/
     .post {
         padding: 1.5em;
         margin-bottom: -2px;
@@ -741,6 +762,7 @@
     }
 
     .post article img {
+
         height: 150px;
         width: 100%;
         object-fit: cover;
@@ -764,7 +786,7 @@
     }
 
     /* About */
-
+/*se agrego un display grid para las dos columnas*/
     .about {
         margin-top: 2em;
         display: grid;
@@ -780,10 +802,10 @@
         margin: 2em;
         margin-top: 0;
         grid-column-start: 1;
-        grid-column-end:2; 
+        grid-column-end: 2;
     }
 
-
+/*se modifico la imagen */
     .bio-info img {
         width: 200px;
 
@@ -957,7 +979,9 @@
 
         color: #D7DEE6;
 
-    }auto
+    }
+
+    auto
 
     /* Social links*/
     .social-links {
@@ -1059,6 +1083,8 @@
         font-size: 1.50em;
         margin: 2em;
         margin-top: 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
 
@@ -1106,8 +1132,7 @@
         border-radius: 0px 2em;
         font-size: 1em;
         width: 100%;
-        grid-column-start: 2;
-        grid-column-end: 3;
+
     }
 
     /* Decorando placeholder */
@@ -1174,13 +1199,13 @@
         display: block;
         padding: 0.5em;
         margin: 0;
-        font-size:2em;
+        font-size: 2em;
     }
 
     .menu li a {
         color: white;
         text-decoration: none;
-        
+
     }
 
 
